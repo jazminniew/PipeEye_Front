@@ -1,0 +1,19 @@
+.image-upload-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-viewer img {
+  max-width: 400px;
+  max-height: 300px;
+  margin: 10px 0;
+}
+
+.navigation, .classification {
+  margin: 10px;
+}
+
+button {
+  margin: 0 5px;
+  padding: 8px 12px;
+}
