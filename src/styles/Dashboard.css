@@ -1,0 +1,63 @@
+/* src/styles/Dashboard.css */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #aaa;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-button {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bottom-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.mini-btn {
+  flex: 1;
+  padding: 10px;
+  background-color: #777;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #ccc;
+  padding: 40px;
+}

@@ -1,15 +1,19 @@
-import React from 'react'
-import ImageUpload from './components/ImageUpload'
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
+import Login from './pages/Login';
 import PruebaConexion from './pages/PruebaConexion';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>PipeEye - Análisis de Radiografías</h1>
-      <ImageUpload />
-      <PruebaConexion />
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<Login />} />
+              <Route path="/pruebaconexion" element={<PruebaConexion />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;

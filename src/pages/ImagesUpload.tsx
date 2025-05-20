@@ -57,7 +57,7 @@ const ImageUpload: React.FC = () => {
         </div>
       )}
     </div>
-  );
+  );  
 };
 
 export default ImageUpload;

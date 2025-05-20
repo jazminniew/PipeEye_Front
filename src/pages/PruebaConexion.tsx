@@ -1,33 +1,43 @@
-// src/pages/PruebaConexion.tsx
+// src/pages/PruebaRutaTres.tsx
+import React from 'react';
 
-import React, { useState } from 'react';
-
-const PruebaConexion: React.FC = () => {
-  const [mensaje, setMensaje] = useState<string>('Esperando respuesta...');
-  const [error, setError] = useState<string | null>(null);
-
-  const probarConexion = async () => {
+const PruebaRutaTres: React.FC = () => {
+  const probarRuta3 = async () => {
     try {
-      const response = await fetch('https://TU_BACKEND_URL/ping');
-      if (!response.ok) throw new Error('Error en la respuesta del servidor');
+      const response = await fetch('https://pipeeye-api.onrender.com/usuarios/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          nombre: 'Jaz',
+          apellido: 'Niew',
+          mail: 'jazminniew@gmail.com',
+          empresa: 'NIEW CO',
+          jerarquia: 'admin'
+        }),
+      });
 
-      const data = await response.text(); // o .json() si tu backend responde en JSON
-      setMensaje(`Respuesta del backend: ${data}`);
-      setError(null);
-    } catch (err: any) {
-      setError(err.message);
-      setMensaje('');
+      if (!response.ok) {
+        const errorText = await response.text();
+        alert('Error: ' + errorText);
+        return;
+      }
+
+      const data = await response.json();
+      alert('Respuesta del backend:\n' + JSON.stringify(data, null, 2));
+    } catch (error) {
+      alert('Error de conexión:\n' + error);
     }
   };
 
   return (
-    <div>
-      <h2>Prueba de conexión con el backend</h2>
-      <button onClick={probarConexion}>Probar conexión</button>
-      <p>{mensaje}</p>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+    <div style={{ padding: '2rem' }}>
+      <h2>Prueba Ruta 3 - POST /usuarios/</h2>
+      <button onClick={probarRuta3}>Probar conexión</button>
     </div>
   );
 };
 
-export default PruebaConexion;
+export default PruebaRutaTres;
