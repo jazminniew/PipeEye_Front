@@ -1,0 +1,112 @@
+/* Body / container */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 10px;
+  height: 60px; 
+}
+
+/* Logo */
+.logo h2 {
+  margin: 0;
+  font-weight: normal;
+  text-transform: none; 
+  color: white;  
+}
+
+.logo{
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* Conjunto de links + perfil */
+.conjunto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+}
+
+/* Estilo de la lista */
+ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cada <li> que es botón */
+.Btn {
+  background-color: #2563EB;  /* Azul PipeEye base */
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px 18px;
+  min-width: 150px; 
+  transition: background-color 0.2s ease;
+}
+
+/* El <a> dentro del .Btn */
+.Btn a {
+  color: rgb(0, 0, 0);       /* Por defecto, negro */
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.historyBtn {
+  background-color: transparent; /* Hace el fondo transparente */
+}
+
+.historyBtn a {
+  color: #000000; /* Texto negro */
+}
+
+.uploadBtn a {
+  color: #ffffff !important;
+}
+
+.uploadBtn:hover {
+  background-color: #1E4CAF; 
+}
+
+.historyBtn:hover {
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+/* Perfil */
+.porfile {
+  display: flex;
+  color: rgb(6, 6, 6); 
+  gap: 5px;
+}
+
+.porfile p {
+  margin: 0;
+}
+img{
+  width: 40px;
+  border-radius: 30px;
+  height: 40px;
+  margin-right: px;
+}
+
+.rol {
+  font-size: 0.85rem;
+  color: #cccccc;
+  background-color: #000000;
+  padding: 5px;
+  border-radius: 20px;
+}

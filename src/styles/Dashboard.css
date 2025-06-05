@@ -1,6 +1,97 @@
 .dashboard-container {
-  display: flex;
   height: 100vh;
   font-family: sans-serif;
+  background-color: #f9fafb;
 }
 
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.estadisticas{
+  background-color: transparent;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.caja{
+  background-color: #fff;
+  border: 1px solid #4848483e;
+  padding: 40px 60px;
+  border-radius: 10px;
+  color: #414141;
+}
+.number.dos{
+  color: #16A34A;
+}
+.number.tres{
+  color: #D97706;
+}
+
+.number.cuatro{
+  color: #DC2626;
+}
+.number{
+  margin-top: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.resumen{
+  background-color: rgb(103, 103, 103);
+  margin: 30px 20px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.caja2{
+  display: flex;
+  background-color: rgb(205, 205, 205);
+  width: 90%;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.grafico{
+  width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #d2d2d2 0% 40%,      /* Parte 1: 40% */
+        #7d7d7d 40% 70%,     /* Parte 2: 30% */
+        #484848 70% 100%     /* Parte 3: 30% */
+      );
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}
+
+.containerGrafico{
+  background-color: rgb(87, 87, 87);
+  width: 50%;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoSecundaria{
+  display: flex;
+}
