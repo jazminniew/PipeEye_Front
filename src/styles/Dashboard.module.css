@@ -1,0 +1,125 @@
+.dashboardContainer {
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #f9fafb;
+}
+
+.dashboardContent {
+  flex: 1;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.title {
+  margin: 0;
+  color: #000;
+}
+
+.subtitle {
+  margin-bottom: 40px;
+}
+
+.estadisticas {
+  background-color: transparent;
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.caja {
+  background-color: #fff;
+  border: 1px solid #4848483e;
+  padding: 40px 60px;
+  border-radius: 10px;
+  color: #414141;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.number {
+  margin-top: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.uno {
+  /* Si necesitas estilos específicos para “uno” */
+}
+
+.dos {
+  color: #16A34A;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.tres {
+  color: #D97706;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cuatro {
+  color: #DC2626;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.infoSecundaria {
+  display: flex;
+}
+
+.resumen {
+  background-color: rgb(103, 103, 103);
+  margin: 30px 20px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.caja2 {
+  display: flex;
+  background-color: rgb(205, 205, 205);
+  width: 90%;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.containerGrafico {
+  background-color: rgb(87, 87, 87);
+  width: 50%;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grafico {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #d2d2d2 0% 40%,
+    #7d7d7d 40% 70%,
+    #484848 70% 100%
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
