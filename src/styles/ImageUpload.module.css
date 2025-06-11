@@ -1,0 +1,194 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  padding: var(--gap-grande);
+  gap: var(--gap-grande);
+}
+
+.leftSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropZone {
+  border: 3px dashed var(--gris-medio);
+  border-radius: var(--border-radius-lg);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: var(--gap-grande);
+  color: var(--blanco);
+}
+
+.uploadIcon {
+  font-size: 3rem;
+  margin-bottom: var(--gap-pequeño);
+}
+
+.fileInput {
+  margin-top: var(--gap-mediano);
+  background-color: var(--cajas);
+}
+
+.previewContainer {
+  width: 100%;
+  background-color: var(--cajas );
+  padding: var(--gap-mediano);
+  border-radius: var(--border-radius-lg);
+  margin-bottom: var(--gap-grande);
+}
+
+.previewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: var(--gap-pequeño);
+}
+
+.previewList {
+  display: flex;
+  overflow-x: auto;
+  gap: var(--gap-pequeño);
+}
+
+.thumbnailWrapper {
+  position: relative;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.deleteButton {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: var(--rojo);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.fullscreenPreview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fullscreenPreview img {
+  min-width: 90%;
+  min-height: 80%;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.fullscreenControls {
+  margin-top: var(--gap-mediano);
+  display: flex;
+  gap: var(--gap-mediano);
+}
+
+.fullscreenControls button {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.closePreview {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.closePreview:hover{
+  background-color: rgba(157, 157, 157, 0.124);
+}
+
+.uploadSection {
+  margin-top: var(--gap-mediano);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-pequeño);
+}
+
+.uploadSection button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-pequeño);
+}
+
+.rightSection h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: var(--gap-mediano);
+  color: var(--blanco);
+}
+
+.rightSection label {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: var(--blanco);
+}
+
+.rightSection input {
+  padding: 10px;
+  border-radius: var(--border-radius-md);
+  border: 2px solid var(--gris-oscuro);
+  font-size: 1rem;
+  margin-bottom: var(--gap-pequeño);
+  color: var(--blanco);
+}

@@ -1,9 +1,8 @@
 // src/pages/Dashboard.tsx
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Statistics from '../components/Statistics;
+import Estadisticas from '../components/Statistics';
 import styles from '../styles/Dashboard.module.css';
-
 const Dashboard: React.FC = () => {
   return (
     <div className={styles.dashboardContainer}>
@@ -14,8 +13,7 @@ const Dashboard: React.FC = () => {
           Resumen general de todos los análisis generados en PipeEye
         </p>
 
-        {/* Ahora solo importamos el componente Statistics */}
-        <Statistics />
+        <Estadisticas />
 
         <div className={styles.infoSecundaria}>
           <div className={styles.resumen}>

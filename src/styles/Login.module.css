@@ -5,17 +5,18 @@ body{
 }
 
 h1{
-  color: #000;
-  margin-left: 30px;
+  color: var(--blanco);
+  padding: 30px 50px;
 }
 
 .container{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .loginContainer{
-  background-color:#a2a2a251;
+  background-color: var(--gris-oscuro);
   display: flex;
   flex-direction: column;
   width: 30em;
@@ -34,7 +35,7 @@ h1{
 input{
   max-width: 20em;
   height: 3em;
-  background-color: #F4F4F4 ;
+  background-color: var(--blanco) ;
   border: none;
   border-radius: 10px;
   padding: 0 20px;
@@ -48,8 +49,8 @@ font-weight: 500;
 button{
   width: 10em;
   height: 3em;
-  background-color: #606060;
-  color: #fff;
+  background-color: var(--color-primario);
+  color: var(--blanco);
   border: none;
   margin-top: 1em;
   border-radius: 10px;
@@ -57,7 +58,7 @@ button{
 }
 
 button:hover{
-  background-color: #777777;
+  background-color: var(--color-primario-hover);
   cursor: pointer;
 }
 

@@ -1,15 +1,21 @@
-/* globals.css */
-
 /* 1. Definir variables en :root */
 :root {
   /* colores */
   --color-primario: #2563EB;
-  --color-secundario: #f9fafb;
+  --color-primario-hover: #296dff;
+  --fondo: #020817;
+  --secundario: #fff;
   --gris-claro: #e0e0e0;
   --gris-medio: #dbdbdb;
-  --gris-oscuro: #484848;
+  --gris-oscuro: #575656;
   --texto-principal: #414141;
   --texto-oscuro: #000000;
+  --blanco: #fff;
+  --negro: #000;
+  --cajas: #050F2A;
+  --verde: #16A34A;
+  --naranja:#D97706;
+  --rojo:#DC2626;
 
   /* espaciados */
   --gap-pequeño: 8px;
@@ -38,7 +44,7 @@ html, body, #root {
 }
 
 body {
-  background-color: var(--color-secundario);
+  background-color: var(--fondo);
   font-family: var(--font-base);
   color: var(--texto-oscuro);
 }
@@ -57,7 +63,6 @@ body {
   margin-right: var(--gap-mediano);
 }
 
-/* Si necesitas un borde gris básico que se use en varios lados */
 .border-gris {
-  border: 1px solid var(--gris-claro);
+  border: 1px solid var(--gris-oscuro);
 }

@@ -1,7 +1,7 @@
 .dashboardContainer {
   height: 100vh;
   font-family: sans-serif;
-  background-color: #f9fafb;
+  background-color: var(--fondo);
 }
 
 .dashboardContent {
@@ -12,7 +12,7 @@
 
 .title {
   margin: 0;
-  color: #000;
+  color: var(--blanco);
 }
 
 .subtitle {
@@ -21,20 +21,21 @@
 
 .estadisticas {
   background-color: transparent;
-  width: 100%;
+  width: 98%;
   margin: 20px 0;
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
   border-radius: 20px;
 }
 
 .caja {
-  background-color: #fff;
-  border: 1px solid #4848483e;
+  background-color: var(--cajas);
+  border: 1px solid #071438;
   padding: 40px 60px;
   border-radius: 10px;
-  color: #414141;
+  color: var(--blanco);
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -50,12 +51,8 @@
   justify-content: center;
 }
 
-.uno {
-  /* Si necesitas estilos específicos para “uno” */
-}
-
 .dos {
-  color: #16A34A;
+  color: var(--verde);
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
@@ -63,7 +60,7 @@
 }
 
 .tres {
-  color: #D97706;
+  color: var(--naranja);
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
@@ -71,7 +68,7 @@
 }
 
 .cuatro {
-  color: #DC2626;
+  color: var(--rojo);
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -83,7 +80,7 @@
 }
 
 .resumen {
-  background-color: rgb(103, 103, 103);
+  background-color:var(--cajas);
   margin: 30px 20px;
   width: 100%;
   border-radius: 10px;
@@ -96,14 +93,15 @@
 
 .caja2 {
   display: flex;
-  background-color: rgb(205, 205, 205);
+  background-color: var(--fondo);
   width: 90%;
   border-radius: 10px;
   padding: 20px 30px;
+  color: var(--blanco);
 }
 
 .containerGrafico {
-  background-color: rgb(87, 87, 87);
+  background-color: var(--cajas);
   width: 50%;
   border-radius: 10px;
   margin: 20px;

@@ -1,0 +1,131 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  flex: 1;
+  padding: var(--gap-grande);
+  background-color: var(--fondo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  overflow-y: auto;
+}
+
+.imageWrapper {
+  max-width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+  border: 2px solid var(--gris-medio);
+  border-radius: var(--border-radius-lg);
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--gap-mediano);
+}
+
+.imagePreview {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-mediano);
+  margin-top: var(--gap-mediano);
+}
+
+.controls button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.aprobada {
+  background-color: #10b981; /* verde */
+}
+
+.aprobada:hover {
+  background-color: #059669;
+}
+
+.reprobada {
+  background-color: #ef4444; /* rojo */
+}
+
+.reprobada:hover {
+  background-color: #dc2626;
+}
+
+.enRevision {
+  background-color: #f59e0b; /* naranja */
+}
+
+.enRevision:hover {
+  background-color: #d97706;
+}
+
+.manualNav {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-mediano);
+  margin-top: var(--gap-pequeño);
+}
+
+.manualNav button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--gris-medio);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  color: #000;
+  cursor: pointer;
+}
+
+.manualNav button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.estado {
+  margin-top: var(--gap-pequeño);
+  font-size: 1rem;
+  color: var(--gris-claro);
+  text-align: center;
+}
+
+.finishSection {
+  text-align: center;
+  margin-top: var(--gap-grande);
+}
+
+.finishSection p {
+  font-size: 1.2rem;
+  margin-bottom: var(--gap-mediano);
+}
+
+.finishButton {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+}
+
+.finishButton:hover {
+  background-color: #1d4ed8;
+}
