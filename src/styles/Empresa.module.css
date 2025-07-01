@@ -1,11 +1,10 @@
 /* src/styles/Empresa.module.css */
 .card {
-  background-color: #111c2e;
+  background-color: var(--cajas);
   color: white;
   border-radius: 12px;
   padding: 20px;
   width: 320px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;

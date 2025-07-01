@@ -4,7 +4,7 @@
   align-items: center;
   background-color: var(--cajas);
   padding: 10px 40px;
-  border-bottom: 1px solid rgb(32, 32, 32);
+  border-bottom: 1px solid rgba(78, 78, 78, 0.58);
   height: 70px;
 }
 

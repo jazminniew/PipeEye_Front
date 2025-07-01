@@ -14,6 +14,7 @@ const StyledLink = styled(Link)`
 
   padding: 0.9em 0em;
   min-width: 180px;
+  outline: none;
   font-size: 1rem;
   font-weight: 500;
   background-size: 280% auto;

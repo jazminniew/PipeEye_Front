@@ -6,9 +6,12 @@
 
 .container {
   display: flex;
-  padding: var(--gap-grande);
+  margin: 0;
+  padding: 0;
+  padding: 0 0 0 var(--gap-grande) ;
   gap: var(--gap-grande);
 }
+
 
 .leftSection {
   flex: 1;
@@ -18,10 +21,10 @@
 }
 
 .dropZone {
-  border: 3px dashed var(--gris-medio);
-  border-radius: var(--border-radius-lg);
+  border: 4px dashed rgba(0, 123, 255, 0.20);
+  border-radius: 10px;
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +32,7 @@
   text-align: center;
   margin-bottom: var(--gap-grande);
   color: var(--blanco);
+  margin-top: 40px;
 }
 
 .uploadIcon {
@@ -191,4 +195,73 @@
   font-size: 1rem;
   margin-bottom: var(--gap-pequeño);
   color: var(--blanco);
+}
+
+/* Oculta el input */
+.hiddenInput {
+  display: none;
+}
+
+/* Botón custom */
+.customFileButton {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: #007BFF;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 1.6px 31.04px 0px rgba(0, 86, 179, 0.57);
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.customFileButton:hover {
+  background: #0056b3; /* azul más oscuro al hover */
+}
+
+.secondaryText {
+  margin-top: 8px;
+  color: #A0A0A0; /* gris oscuro sutil */
+  font-size: 0.9rem;
+}
+
+.compatibleText {
+  margin-top: 12px;
+  color: #A0A0A0;
+  font-size: 0.85rem;
+}
+
+/* Contenedor fijo */
+.rightSection {
+  flex: 0 0 450px; /* ancho fijo */
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-pequeño);
+  background-color: var(--cajas); /* o tu color */
+  padding: var(--gap-grande);
+  height: 100vh;
+    /* border-top: 1px solid rgba(78, 78, 78, 0.58); */
+  
+}
+
+.rightSection h2{
+  color: var(--color-primario);
+}
+
+.rightSection input{
+  background-color: #1B243C59;
+  color: var(--gris-medio);
+  border: 1px solid #ffffff13;
+  border-radius: 10px;
+}
+
+.rightSection input::placeholder {
+  color: var(--gris-claro); /* o el color que prefieras */
+  opacity: 0.7; /* opcional para suavizar */
+}
+
+.rightSection input:focus {
+  outline: none; /* Saca el borde nativo feo */
 }

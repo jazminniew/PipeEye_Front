@@ -1,5 +1,5 @@
 // src/components/Empresa.tsx
-import React from 'react';
+import * as React from 'react';
 import styles from '../styles/Empresa.module.css';
 import { Link } from 'react-router-dom';
 

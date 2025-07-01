@@ -60,7 +60,7 @@ const StyledWrapper = styled.div`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+    background: linear-gradient(90deg,hsla(194, 100%, 69%, 1), hsla(217, 100%, 56%, 1) );
     border: none;
     display: inline-block;
     transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -87,6 +87,12 @@ const StyledWrapper = styled.div`
     padding: 24px 46px 24px 26px;
     flex: 1;
   }
+
+  .searchInput::placeholder {
+  color: var(--gris-medio);
+  opacity: 1; /* Para que sea sólido */
+}
+
 `;
 
 export default SearchBar;
