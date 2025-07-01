@@ -2,16 +2,18 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Estadisticas from '../components/Statistics';
+import Grafico from '../components/CakeGraph';
 import styles from '../styles/Dashboard.module.css';
 const Dashboard: React.FC = () => {
   return (
     <div className={styles.dashboardContainer}>
       <Navbar />
       <div className={styles.dashboardContent}>
-        <h1 className={styles.title}>Bienvenido a PipeEye.</h1>
-        <p className={styles.subtitle}>
-          Resumen general de todos los análisis generados en PipeEye
-        </p>
+    <div className={styles.header}>
+      <h2 className={styles.title}>Bienvenido a PipeEye.</h2>
+      <p className={styles.subtitle}>Resumen general de todos los análisis generados en PipeEye</p>
+    </div>
+
 
         <Estadisticas />
 
@@ -23,7 +25,7 @@ const Dashboard: React.FC = () => {
           </div>
 
           <div className={styles.containerGrafico}>
-            <div className={styles.grafico}></div>
+            <Grafico/>
           </div>
         </div>
       </div>

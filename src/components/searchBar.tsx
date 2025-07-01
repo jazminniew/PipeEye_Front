@@ -42,7 +42,7 @@ const SearchBar: React.FC = () => {
 const StyledWrapper = styled.div`
   .searchBox {
     display: flex;
-    max-width: 230px;
+    min-width: 500px;
     align-items: center;
     justify-content: space-between;
     gap: 8px;

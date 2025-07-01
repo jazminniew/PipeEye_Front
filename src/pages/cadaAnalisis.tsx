@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar.tsx';
-import { Link } from 'react-router-dom'; 
+import Navbar from '../components/Navbar.tsx'; 
 
 const cadaAnalisis: React.FC = () => {
   return (

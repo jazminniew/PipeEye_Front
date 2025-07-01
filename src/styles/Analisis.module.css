@@ -1,0 +1,32 @@
+/* src/styles/Analisis.module.css */
+
+.contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-left: none;
+  padding: 60px 0 30px 0 ;
+}
+
+.listaCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+}
+
+.linkDetalle {
+  margin-top: 30px;
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+

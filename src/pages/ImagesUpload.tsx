@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/ImageUpload.module.css';
-import Navbar from '../components/Navbar.tsx';
+import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 
 const ImagesUpload: React.FC = () => {
@@ -11,37 +11,42 @@ const ImagesUpload: React.FC = () => {
   const navigate = useNavigate();
 
   const handleUploadToBackend = async () => {
-    const imageToUpload = images[0];
-    if (!imageToUpload) return;
+  if (images.length === 0) return;
 
-    const formData = new FormData();
-    formData.append('file', imageToUpload);
+  const formData = new FormData();
+  images.forEach((img) => {
+    formData.append('files', img); // 🔁 array de imágenes
+  });
 
-    const proyectoId = 1;
+  const proyectoId = 1;
 
-    setUploading(true);
-    setUploadSuccess(false);
+  setUploading(true);
+  setUploadSuccess(false);
 
-    try {
-      const response = await fetch(`https://pipeeye-api.onrender.com/upload-img/?proyecto_id=${proyectoId}`, {
-        method: 'POST',
-        body: formData,
-      });
+  try {
+    const response = await fetch(`https://pipeeye-api.onrender.com/upload-multiple-imgs/?proyecto_id=${proyectoId}`, {
+      method: 'POST',
+      body: formData,
+    });
 
-      if (response.ok) {
-        const result = await response.json();
-        console.log('La imagen fue subida al back:', result);
-        setUploadSuccess(true);
-      } else {
-        const errorText = await response.text();
-        console.error('La imagen no fue subida al back:', response.status, errorText);
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    } finally {
-      setUploading(false);
+if (response.ok) {
+  const result = await response.json();
+  console.log('Imágenes subidas correctamente:', result);
+  setUploadSuccess(true);
+  setImages([]); 
+  setSelectedIndex(null); 
+}
+else {
+      const errorText = await response.text();
+      console.error('Error al subir imágenes:', response.status, errorText);
     }
-  };
+  } catch (error) {
+    console.error('Error general:', error);
+  } finally {
+    setUploading(false);
+  }
+};
+
 
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
@@ -94,7 +99,7 @@ const ImagesUpload: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.leftSection}>
           <div className={styles.dropZone}>
-            <div className={styles.uploadIcon}>⬆️</div>
+            <div className={styles.uploadIcon}>ICONO</div>
             <p><strong>Arrastra la imagen/carpeta</strong></p>
             <input type="file" accept="image/png" multiple onChange={handleImageChange} className={styles.fileInput} />
           </div>

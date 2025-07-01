@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cajas);
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  color: var(--blanco);
+  max-width: 2000px;
+}
+
+.izquierda {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icono {
+  width: 50px;
+  height: 50px;
+  background-color: #1162dc;
+  border-radius: 8px;
+}
+
+.infoPrincipal {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tituloEstado {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.estado {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.aprobado {
+  background-color: var(--verde);
+  color: white;
+}
+
+.dudoso {
+  background-color: var(--amarillo);
+  color: #1a1a1a;
+}
+
+.subinfo {
+  display: flex;
+  gap: 20px;
+  font-size: 0.85rem;
+  color: var(--gris-medio);
+}
+
+.derecha {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btnDetalle {
+  background-color: var(--color-primario);
+  color: #0a0a0a;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnDetalle:hover {
+  background-color: var(--color-primario-hover);
+}

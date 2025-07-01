@@ -5,23 +5,29 @@
 }
 
 .dashboardContent {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
   padding: 2rem;
-  height: 100vh;
 }
 
+
 .title {
-  margin: 0;
   color: var(--blanco);
+  text-align: left; /* fuerza alineación */
+  margin-bottom: 20px;
 }
 
 .subtitle {
-  margin-bottom: 40px;
+  margin: 0 0 20px 0;
+  color: var(--blanco);
+  text-align: left; /* fuerza alineación */
 }
+
 
 .estadisticas {
   background-color: transparent;
-  width: 98%;
+  width: 100%;
   margin: 20px 0;
   display: flex;
   gap: 20px;
@@ -32,7 +38,7 @@
 
 .caja {
   background-color: var(--cajas);
-  border: 1px solid #071438;
+  border:  1px solid rgb(32, 32, 32);
   padding: 40px 60px;
   border-radius: 10px;
   color: var(--blanco);
@@ -77,34 +83,36 @@
 
 .infoSecundaria {
   display: flex;
+  gap: 20px;
+  align-items: stretch; /* estira hijos a misma altura */
 }
 
 .resumen {
-  background-color:var(--cajas);
-  margin: 30px 20px;
-  width: 100%;
+  background-color: var(--cajas);
+  flex: 2; /* Que use todo el espacio disponible */
   border-radius: 10px;
   padding: 20px;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between; /* Distribuye las cajas equitativamente */
+  gap: 12px;
 }
 
 .caja2 {
-  display: flex;
   background-color: var(--fondo);
-  width: 90%;
   border-radius: 10px;
   padding: 20px 30px;
   color: var(--blanco);
+  flex: 1; /* Hace que cada caja crezca igual */
+  display: flex;
+  align-items: center; /* Centra contenido verticalmente */
+  font-weight: 700;
 }
 
 .containerGrafico {
   background-color: var(--cajas);
-  width: 50%;
+  flex: 1; /* Mismo peso que .resumen */
   border-radius: 10px;
-  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,3 +129,12 @@
   );
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.subtitle{
+  color: var(--blanco);
+}
+
+.header {
+  text-align: left; /* alinea todo el bloque */
+}
+

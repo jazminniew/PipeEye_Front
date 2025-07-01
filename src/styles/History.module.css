@@ -1,0 +1,29 @@
+/* Centra todo el bloque .todo */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* Contenedor interno */
+.todo {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Searchbar alineada a la izquierda */
+.topBar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Grilla de 3 columnas alineada a la izquierda */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 24px;
+  justify-content: start;
+}
