@@ -10,7 +10,7 @@ const AnalisisCard: React.FC = () => {
         <div className={styles.infoPrincipal}>
           <div className={styles.tituloEstado}>
             <h3>Tubería Principal</h3>
-            <span className={`${styles.estado} ${styles.aprobado}`}>✔ Aprobado</span>
+            <span className={`${styles.estado} ${styles.aprobado}`}>✔ Analizado</span>
           </div>
           <div className={styles.subinfo}>
             <span>📅 14/01/2024 - 14:30</span>

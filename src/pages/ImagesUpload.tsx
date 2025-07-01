@@ -3,6 +3,7 @@ import styles from '../styles/ImageUpload.module.css';
 import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 
+
 const ImagesUpload: React.FC = () => {
   const [images, setImages] = useState<File[]>([]);
   const [uploading, setUploading] = useState(false);
@@ -108,7 +109,7 @@ else {
                o haz clic para seleccionar archivos desde tu computadora
               </p>
              <label htmlFor="fileInput" className={styles.customFileButton}>
-                Seleccionar imagen
+                Seleccionar
             </label>
 
               <p className={styles.compatibleText}>
@@ -162,9 +163,6 @@ else {
             <button onClick={handleUploadToBackend} disabled={uploading}>
               {uploading ? 'Subiendo' : 'Mandar al back'}
             </button>
-            <button onClick={handleAnalyze} disabled={images.length === 0}>
-              Analizar imágenes
-            </button>
             {uploadSuccess && <p>Imagen enviada correctamente</p>}
           </div>
         </div>
@@ -180,9 +178,10 @@ else {
 
           <label>Fecha</label>
           <input type="date" />
-            <button className={styles.nextButton}>
+            <button className={styles.nextButton} onClick={handleAnalyze}>
               Siguiente
             </button>
+
         </div>
       </div>
     </div>

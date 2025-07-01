@@ -12,16 +12,17 @@ const History: React.FC = () => {
   return (
     <div>
       <Navbar />
-        <div className={styles.wrapper}>
-          <div className={styles.todo}>
-            <div className={styles.breadcrumbContainer}>
+                  <div className={styles.breadcrumbContainer}>
             <Breadcrumb
               items={[
-                { label: 'Inicio', to: '/' },
+                { label: 'Dashboard', to: '/dashboard' },
                 { label: 'Historial' }
               ]}
             />
           </div>
+        <div className={styles.wrapper}>
+          <div className={styles.todo}>
+
 
             <div className={styles.topBar}>
               <SearchBar />
