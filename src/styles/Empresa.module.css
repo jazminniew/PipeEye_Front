@@ -69,3 +69,13 @@
 .botonSecundario:hover {
   background-color: #283855;
 }
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnim 0.8s ease forwards;
+}
+
+@keyframes fadeInAnim {
+  to {
+    opacity: 1;
+  }
+}

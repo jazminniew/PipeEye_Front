@@ -1,21 +1,41 @@
-import React from 'react';
-import styles from '../styles/Login.module.css';
+import React from "react";
+import styles from "../styles/Login.module.css";
+import Switch from "../components/Switch";
 
 const Login: React.FC = () => {
   return (
-    <div>
-      <h1>PipeEye</h1>
-      <div className={styles.container}>
-        <div className={styles.loginContainer}>
-        <h2>Iniciar sesión</h2>
-        <form className={styles.loginForm}>
-          <input type="text" placeholder="Usuario/Mail" />
-          <input type="password" placeholder="Contraseña" />
-          <button type="submit">Ingresar</button>
-        </form>
-        </div>
+    <div className={styles.loginContainer}>
+      <div className={styles.leftSide}>
+      </div>
+      <div className={styles.rightSide}>
+        <div className={styles.formContainer}>
+          <h1>Qué bueno verte!</h1>
+          <p>Ingresá tu correo electrónico y contraseña para iniciar sesión.</p>
+          <form>
+            <label htmlFor="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Tu dirección de correo"
+            />
+
+            <label htmlFor="password">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Tu contraseña"
+            />
+            <div className={styles.rememberMe}>
+              <Switch />
+              <label>Recordarme</label>
+            </div>
+
+
+            <button type="button">INGRESAR</button>
+          </form>
         </div>
       </div>
+    </div>
   );
 };
 

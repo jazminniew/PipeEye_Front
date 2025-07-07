@@ -1,68 +1,102 @@
-body{
-  height: 100vh; 
-  margin: 0; 
-  font-family: sans-serif;
-}
-
-h1{
-  color: var(--blanco);
-  padding: 30px 50px;
-}
-
-.container{
+.loginContainer {
   display: flex;
-  justify-content: center;
+  height: 100vh;
+}
+
+.leftSide {
+  flex: 1;
+  background: url('public/img/LoginBackground.png') no-repeat center center;
+  background-size: cover;
+}
+
+.rightSide {
+  flex: 1;
+  background: linear-gradient(159deg, #090D2E 14.25%, #090D2E 14.25%, #0D0F11 86.14%);
+  color: #ffffff;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.loginContainer{
-  background-color: var(--gris-oscuro);
+.formContainer {
+  max-width: 450px; 
+  width: 100%;
+}
+
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 2rem;
+  color: #A0AEC0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 1rem 1rem;
+  background: #0f1739; /* fondo oscuro para que se note el inset */
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+
+  /* Efecto inset */
+box-shadow:
+  inset 0 1px 2px rgba(255, 255, 255, 0.05),
+  inset 0 -1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #a0a0a0;
+}
+
+.rememberMe {
   display: flex;
-  flex-direction: column;
-  width: 30em;
-  height: 20em;
-  border-radius: 20px;
-  padding: 40px;
+  align-items: center;
+  margin: 1rem 0;
 }
 
-.loginForm{
-  display: flex;
-  flex-direction: column;
-  width: 20em;
-  gap: 1em;
+.rememberMe input {
+  margin-right: 0.5rem;
 }
 
-input{
-  max-width: 20em;
-  height: 3em;
-  background-color: var(--blanco) ;
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-primario); 
   border: none;
   border-radius: 10px;
-  padding: 0 20px;
-}
-
-input::placeholder{
-color: black;
-font-weight: 500;
-}
-
-button{
-  width: 10em;
-  height: 3em;
-  background-color: var(--color-primario);
-  color: var(--blanco);
-  border: none;
-  margin-top: 1em;
-  border-radius: 10px;
-  text-transform: uppercase;
-}
-
-button:hover{
-  background-color: var(--color-primario-hover);
+  color: #ffffff;
+  font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-h2{
-  margin-bottom: 2em;
-  text-transform: uppercase;
+button:hover {
+  background: var(--color-primario-hover);
+}
+
+
+.rememberMe {
+  display: flex;
+  align-items: center; 
+  gap: 0px;          
+  margin: 1rem 0;     
+}
+
+.rememberMe label {
+  margin: 0; 
+  font-size: 0.9rem;
+  cursor: pointer; 
 }

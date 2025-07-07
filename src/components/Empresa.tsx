@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Empresa: React.FC = () => {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${styles.fadeIn}`}>
       <div className={styles.header}>
         <div className={styles.icono}></div>
         <h3 className={styles.nombre}>Constructora Andina S.A.</h3>

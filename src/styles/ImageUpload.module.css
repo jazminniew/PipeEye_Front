@@ -265,3 +265,21 @@
 .rightSection input:focus {
   outline: none; /* Saca el borde nativo feo */
 }
+
+/* ImageUpload.module.css */
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.rightSection {
+  /* Lo que ya tengas */
+  animation: slideInRight 0.8s ease-out forwards;
+}

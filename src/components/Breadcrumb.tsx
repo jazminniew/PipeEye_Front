@@ -14,7 +14,11 @@ interface BreadcrumbProps {
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   return (
-    <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+    <nav
+      className={styles.breadcrumb}
+      aria-label="Breadcrumb"
+      style={{ margin: '40px 0 20px 140px' }} // 👈 margen vertical arriba y abajo
+    >
       {items.map((item, index) => (
         <React.Fragment key={index}>
           {item.to ? (

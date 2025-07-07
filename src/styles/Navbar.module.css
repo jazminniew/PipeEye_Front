@@ -3,11 +3,10 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--cajas);
-  padding: 10px 40px;
+  padding: 12px 40px; /* 👉 top-bottom 20px, left-right 40px */
   border-bottom: 1px solid rgba(78, 78, 78, 0.58);
-  height: 70px;
+  min-height: 70px; /* altura mínima, crece si padding es mayor */
 }
-
 /* Logo a la izquierda */
 .logo {
   display: flex;
