@@ -9,21 +9,21 @@ const Login: React.FC = () => {
       </div>
       <div className={styles.rightSide}>
         <div className={styles.formContainer}>
-          <h1>Qué bueno verte!</h1>
+          <h1>¡Qué bueno verte!</h1>
           <p>Ingresá tu correo electrónico y contraseña para iniciar sesión.</p>
           <form>
             <label htmlFor="email">Correo electrónico</label>
             <input
               type="email"
               id="email"
-              placeholder="Tu dirección de correo"
+              placeholder="usuario@gmail.com"
             />
 
             <label htmlFor="password">Contraseña</label>
             <input
               type="password"
               id="password"
-              placeholder="Tu contraseña"
+              placeholder="Usuario12345!"
             />
             <div className={styles.rememberMe}>
               <Switch />
