@@ -168,7 +168,7 @@ else {
         </div>
 
         <div className={styles.rightSection}>
-          <h2>Completar la siguiente<br />información</h2>
+          <h2>Completar la siguiente información</h2>
 
           <label>Cliente</label>
           <input type="text" placeholder="Nombre del cliente" />

@@ -4,11 +4,11 @@
   color: white;
   border-radius: 12px;
   padding: 20px;
-  width: 320px;
+  width: 280px;
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .header {

@@ -12,7 +12,7 @@ const History: React.FC = () => {
   return (
     <div>
       <Navbar />
-                  <div className={styles.breadcrumbContainer}>
+          <div className={styles.breadcrumbContainer}>
             <Breadcrumb
               items={[
                 { label: 'Dashboard', to: '/dashboard' },
@@ -22,6 +22,7 @@ const History: React.FC = () => {
           </div>
         <div className={styles.wrapper}>
           <div className={styles.todo}>
+              <h1 className={styles.titulo}>Historial</h1>
 
 
             <div className={styles.topBar}>
